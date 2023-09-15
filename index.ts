@@ -32,10 +32,8 @@ const defaultQuery = {
 	title: 'Franki',
 	score: 84,
 	avg: 78,
-	time: {
-		min: 1,
-		sec: 20,
-	},
+	min: 1,
+	sec: 20,
 	place: 7334,
 	count: 123,
 	date: '2023.08.07'

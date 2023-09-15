@@ -25,22 +25,30 @@
       .text-blue {
           color: #0B5798;
       }
+			.gradient {
+          background: rgb(2,0,36);
+          background: linear-gradient(90deg, #020024, #147FC2);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+      }
 	</style>
 </head>
 <body class="w-full h-full" style="text-align: center; font-family: Roboto, sans-serif;">
 <img class="w-full h-full" alt="" src="<%= background %>"/>
 <div class="absolute" style="top: 180px">
+	<!--	It's fix gradient bug -->
+	<p class="gradient" style="visibility: hidden">a</p>
 	<h1
-		class="text-blue w-full left-0 font-thin"
-		style="margin-bottom: 1rem; font-size: 4rem; letter-spacing: 5px;"
+		class="text-blue w-full left-0 font-thin gradient"
+		style="margin-bottom: 1rem; font-size: 3.5rem; letter-spacing: 5px;"
 	>
 		CERTYFIKAT
 	</h1>
 	<p class="w-full left-0 font-thin font-lg" style="margin-bottom: 1rem;">zaświadczający przygotowanie otrzymuje:</p>
-	<p class="w-full left-0 text-blue font-bold" style="margin-bottom: 1rem; font-size: 2.5rem">
+	<p class="w-full left-0 text-blue font-bold gradient" style="margin-bottom: 1rem; font-size: 3rem">
 		<%= name %>
 	</p>
-	<p class="w-full left-0 text-blue font-bold" style="margin-bottom: 1rem; font-size: 2rem; font-style: italic">
+	<p class="w-full left-0 text-blue font-bold gradient" style="margin-bottom: 1rem; font-size: 2rem; font-style: italic">
 		<%= title %>
 	</p>
 	<p class="w-full left-0 font-thin font-lg" style="padding: 0 8rem;">

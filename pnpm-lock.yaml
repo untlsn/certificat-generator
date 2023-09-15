@@ -11,20 +11,21 @@ dependencies:
   bun:
     specifier: ^1.0.1
     version: 1.0.1
+  bun-types:
+    specifier: latest
+    version: 1.0.1
   ejs:
     specifier: ^3.1.9
     version: 3.1.9
+  hono:
+    specifier: ^3.6.1
+    version: 3.6.1
   puppeteer:
     specifier: ^21.2.1
     version: 21.2.1(typescript@5.2.2)
   typescript:
     specifier: ^5.2.2
     version: 5.2.2
-
-devDependencies:
-  bun-types:
-    specifier: latest
-    version: 1.0.1
 
 packages:
 
@@ -222,7 +223,7 @@ packages:
 
   /bun-types@1.0.1:
     resolution: {integrity: sha512-7NrXqhMIaNKmWn2dSWEQ50znMZqrN/5Z0NBMXvQTRu/+Y1CvoXRznFy0pnqLe024CeZgVdXoEpARNO1JZLAPGw==}
-    dev: true
+    dev: false
 
   /bun@1.0.1:
     resolution: {integrity: sha512-rdrGbCuDKrwidZ+I05k127JyvKiLIsIov1/Qcf1u1s0zv+e1csjA/7cSOQ1AjmdZ1sqm0VFx/N1rccZ91SQylw==}
@@ -495,6 +496,11 @@ packages:
   /has-flag@4.0.0:
     resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
     engines: {node: '>=8'}
+    dev: false
+
+  /hono@3.6.1:
+    resolution: {integrity: sha512-FaWXh0MSc2Hv2IrGI4vFvZEK69NHfggEgHUlNMXp2zrpKh23j7wS0Ku316Do9CFAl07OBNozBelcvruiBT8crQ==}
+    engines: {node: '>=16.0.0'}
     dev: false
 
   /http-proxy-agent@7.0.0:

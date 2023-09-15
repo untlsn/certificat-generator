@@ -1,0 +1,16 @@
+{
+  "name": "certificat",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bunx ./index.ts --watch",
+  },
+  "dependencies": {
+    "bun-types": "latest",
+    "typescript": "^5.2.2",
+    "bun": "^1.0.1",
+    "@types/ejs": "^3.1.2",
+    "ejs": "^3.1.9",
+    "puppeteer": "^21.2.1"
+  }
+}

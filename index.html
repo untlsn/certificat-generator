@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Certyfikat</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
+	<style>
+			* {
+					box-sizing: border-box;
+          margin: 0;
+			}
+      .w-full { width: 100vw }
+      .h-full { height: 98vh }
+      .absolute { position: absolute }
+			.left-0 { left: 0 }
+			.font-thin { font-weight: 300 }
+			.font-bold { font-weight: 700 }
+			.font-lg { font-size: 1.25rem }
+			.text-white { color: white }
+      .text-blue {
+          color: #0B5798;
+      }
+	</style>
+</head>
+<body class="w-full h-full" style="text-align: center; font-family: Roboto, sans-serif;">
+<img class="w-full h-full" alt="" src="<%= background %>"/>
+<div class="absolute" style="top: 180px">
+	<h1
+		class="text-blue w-full left-0 font-thin"
+		style="margin-bottom: 1rem; font-size: 4rem; letter-spacing: 5px;"
+	>
+		CERTYFIKAT
+	</h1>
+	<p class="w-full left-0 font-thin font-lg" style="margin-bottom: 1rem;">zaświadczający przygotowanie otrzymuje:</p>
+	<p class="w-full left-0 text-blue font-bold" style="margin-bottom: 1rem; font-size: 2.5rem">
+		<%= name %>
+	</p>
+	<p class="w-full left-0 text-blue font-bold" style="margin-bottom: 1rem; font-size: 2rem; font-style: italic">
+		<%= title %>
+	</p>
+	<p class="w-full left-0 font-thin font-lg" style="padding: 0 8rem;">
+		za ukończenie wirtualnych treningów wiedzy
+		z zakresu napraw samochodów
+	</p>
+</div>
+<p class="absolute font-thin font-lg" style="top: 587px; left: 370px">
+	<b><%= score %></b>
+	pkt.
+</p>
+<div class="absolute w-full" style="top: 680px; display: flex; justify-content: center; gap: 30px">
+	<p style="font-size: .7rem; width: 130px; padding: 0 8px;">Średnia poprawność odpowiedzi</p>
+	<p style="font-size: .7rem; width: 130px; padding: 0 8px;">Średni czas odpowiedzi</p>
+	<p style="font-size: .7rem; width: 130px; padding: 0 8px;">Miejsce w rankingu globalnym</p>
+	<p style="font-size: .7rem; width: 130px; padding: 0 8px;">Ilość poprawnych odpowiedz</p>
+</div>
+
+<div
+	class="absolute w-full"
+	style="top: 720px; display: flex; justify-content: center; gap: 30px; height: 65px; align-items: center;"
+>
+	<p class="font-bold" style="width: 130px"><%= avg %></p>
+	<div class="" style="width: 130px; font-size: .8rem">
+		<p style="margin: 0"><b><%= time.min %></b> <small style="font-size: .5rem">m.</small></p>
+		<p style="margin: 0"><b><%= time.sec %></b> <small style="font-size: .5rem">s.</small></p>
+	</div>
+	<p class="font-bold" style="width: 130px"><%= place %></p>
+	<p class="font-bold" style="width: 130px"><%= count %></p>
+</div>
+
+<div
+	class="w-full text-white absolute"
+	style="top: 870px; left: 300px; height: 180px; display: flex; width: 200px; flex-direction: column; justify-content: center; gap: 8px;"
+>
+	<p>CERTYFIKAT</p>
+	<p class="font-bold">REKOMENDOWANY MECHANIK</p>
+	<p><%= date %></p>
+</div>
+</body>
+</html>
